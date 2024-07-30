@@ -71,10 +71,10 @@ footer {
   display:flex;
 
   /* Add a Flexbox property to center the contents of the header. */
-  justify-content: center;
+  align-items: center;
 
   /* Add a Flexbox property to align the contents at their center. */
-  align-content: center;
+  justify-content: center;
 
   /* Add the Flexbox property flex-flow: row wrap; to allow the flex child items to wrap. */
   flex-flow: row wrap;
@@ -106,10 +106,13 @@ footer {
 
 .services-content-wrapper {
   /* Add a Flexbox property to make the services-content-wrapper a flex parent container. */
+  display:flex;
 
   /* Add a justify-content property and value so that any extra space in the parent container is between the child flex items as the layout changes and more than one card is on a row.  */
+  justify-content: space-between;
 
   /* Add the Flexbox property flex-flow: row wrap; to allow the flex child items to wrap. */
+  flex-flow: row wrap;
 
 }
 
@@ -120,7 +123,6 @@ footer {
 
   /* Add flex-direction: column; so that the services card's child flex items are laid out in a column. */
   flex-direction: column;
-  justify-content: flex-start;
   margin-bottom: 50px;
 }
 
@@ -139,12 +141,16 @@ footer {
 
 .testimonial-content-wrapper {
   /* Add a Flexbox property to make the testimonial-content-wrapper a flex parent container. */
+  display:flex;
 
   /* Add a justify-content property and value so that any extra space if the parent container is between the child flex items.  */
+  justify-content: space-between;
 
   /* Add the Flexbox property flex-flow: row wrap; to allow the flex child items to wrap. */
+  flex-flow: row wrap;
 
   /* Add align-items: flex-start; so that the background adjusts to the height of the testimonial. */
+  align-items: flex-start;
 
 }
 
@@ -158,10 +164,13 @@ footer {
 
 .footer-content-wrapper {
   /* Add a Flexbox property to make the testimonial-content-wrapper a flex parent container. */
+  display:flex;
 
   /* Add a justify-content property and value so that any extra space if the parent container is around the child flex items.  */
+  justify-content: space-around;
 
   /* Add a Flexbox property to align the contents at their center. */
+  align-items: center;
 
 }
 
@@ -171,10 +180,13 @@ footer {
 
 .icon-wrapper {
   /* Add a Flexbox property to make the icon-wrapper a flex parent container. */
+  display:flex;
 
   /* Add a Flexbox property to center the icons in their parent container. */
+  justify-content: center;
 
   /* Add gap: 20px; to create space between the icons. */
+  gap: 20px;
 }
 
 .contact-wrapper i {
@@ -247,8 +259,10 @@ footer {
   .services-description {
     width: 25%;
     /* Add flex-direction: column; so that the services card's child flex items are laid out in a column again. */
+    flex-direction: column;
 
     /* Add justify-content: flex-start; so the text is aligned at the top. */
+    justify-content: flex-start;
 
     margin-bottom: 0;
   }
